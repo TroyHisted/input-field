@@ -286,10 +286,8 @@ public class DynaFieldTest extends InputFieldTest {
 	@Test
 	public void testSetMappedBeanProperty() throws NoSuchMethodException, IllegalAccessException,
 			InvocationTargetException {
-		final Field<Map<String, String>> field = this
-				.initialize((Map<String, String>) new HashMap<String, String>());
+		final Field<? extends Map<String, String>> field = this.initialize(new HashMap<String, String>());
 		BeanUtils.setProperty(field, "value(one)", "sample");
-		System.err.println(field);
 		Assert.assertEquals("sample", field.getValue().get("one"));
 	}
 }
