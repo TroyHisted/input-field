@@ -25,7 +25,7 @@ package com.troyhisted.inputfield.field;
  * Because an InputOption is immutable, it cannot be modified after creation. The InputOption may be constructed
  * from one of the several parameterized constructors. If a "blank" option is desired, the default constructor
  * can be used. An InputOption is always an enabled option(the user may select it). If an option should be
- * disabled, the InputOption may be wrapped in a {@link DisabledInputOption}. Alternatively, the
+ * disabled, the InputOption may be wrapped in a {@link Disabled}. Alternatively, the
  * {@link OptionBuilder} may be used to construct the option. The builder may prove more convenient if the
  * attributes of the option are not all known at the time of construction.
  *
