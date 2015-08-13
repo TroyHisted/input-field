@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+	<tlib-version>1.0</tlib-version>
+	<short-name>input</short-name>
+	<uri>http://troyhisted.com/inputfield</uri> 
+	<tag>
+		<name>input</name>
+		<tag-class>com.troyhisted.inputfield.tag.Input</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<description>The type of input (defaults to "text"). The type specifies which type of form control to render.</description>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>The current value of the input field. Depending on the type of input, this can range from the text of a textarea to the value of a select option.</description>
+			<name>value</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.Object</type>
+		</attribute>
+		<attribute>
+			<description>For radio and check-box inputs, this is the value that will be submitted if the radio or check-box is selected.</description>
+			<name>submitValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>The options are an array or list of potential values that the user can choose from. Depending on the type of input, they are presented as anything from select options to a list of check-boxes. For convenience, integrated support for {@link Option} objects is included, however any list or collection of objects may be used.</description>
+			<name>options</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.Object</type>
+		</attribute>
+		<attribute>
+			<description>Specifies which property of an option to use as the value. If unspecified, the toString of the option will be used.</description>
+			<name>valueProperty</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Specifies which property of an option to use as the label.  If unspecified, the toString of the option will be used.</description>
+			<name>labelProperty</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Specifies which property of an option to use as the value. If unspecified, will default to a blank string.</description>
+			<name>options</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Specifies which property of an option to use as the indicator for enable. If unspecified, all options will be enabled.</description>
+			<name>enabledProperty</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+</taglib>
